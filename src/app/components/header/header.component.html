@@ -4,14 +4,10 @@
       <img src="assets/img/icone-garagem.png" alt="logo" />
     </a>
   </span>
-  <mat-divider [vertical]="true" class="divider"></mat-divider>
-  <!-- <ng-container *ngIf="(asyncTabs | async) === null">
-        Loading tabs...
-      </ng-container>
-    <mat-tab-group>
-        <mat-tab *ngFor="let tab of asyncTabs | async">
-          <ng-template mat-tab-label>{{tab.label}}</ng-template>
-          {{tab.content}}
-        </mat-tab>
-      </mat-tab-group> -->
+  <!-- <mat-divider [vertical]="true" class="divider"></mat-divider> -->
+  <mat-tab-group animationDuration="0ms">
+    <mat-tab label="First"></mat-tab>
+    <mat-tab label="Second"></mat-tab>
+    <mat-tab label="Third"></mat-tab>
+  </mat-tab-group>
 </mat-toolbar>
