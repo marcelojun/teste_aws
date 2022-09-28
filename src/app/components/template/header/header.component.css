@@ -1,0 +1,7 @@
+.header{
+    display: flex;
+    background-color: rgba(224, 181,77);
+}
+.header .divider{
+    color: black;
+}
