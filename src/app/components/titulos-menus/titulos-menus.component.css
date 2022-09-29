@@ -1,0 +1,25 @@
+/*
+Necessário definir cor do titulo no css quando utilizado:
+
+app-titulos-menus {
+  color: cor desejada
+}
+*/
+.posicao-contato {
+  display: flex;
+  justify-content: center;
+  margin: 0 20% 4% 20%;
+  padding-top: 7%;
+  padding-bottom: 2%;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #000;
+}
+
+.titulo-contato {
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 35px;
+  line-height: 1.2em;
+  letter-spacing: -1px;
+  font-weight: bold;
+}

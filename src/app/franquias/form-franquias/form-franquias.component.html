@@ -1,0 +1,19 @@
+<div class="formulario-baixar-apresentacao">
+  <form [formGroup]="formulario">
+    <fieldset class="campo-formulario">
+      <input
+        class="form-control"
+        placeholder="Nome"
+        formControlName="nome"
+        required
+      />
+      <small
+        *ngIf="
+          formulario.get('nome')?.invalid && formulario.get('nome')?.touched
+        "
+        class="text-danger"
+        >É necessário informar seu nome!</small
+      >
+    </fieldset>
+  </form>
+</div>

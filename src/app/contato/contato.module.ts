@@ -1,3 +1,4 @@
+import { TitulosMenusModule } from './../components/titulos-menus/titulos-menus.module';
 import { MatCardModule } from '@angular/material/card';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -15,6 +16,7 @@ import { ContatoComponent } from './contato.component';
     MatGridListModule,
     MatCardModule,
     MatIconModule,
+    TitulosMenusModule,
   ],
   exports: [ContatoComponent],
 })

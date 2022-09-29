@@ -1,0 +1,23 @@
+app-titulos-menus {
+  color: #fff;
+}
+
+body {
+  background-color: #fdcb00;
+}
+
+.posicao-descricao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 7% 0 7%;
+}
+
+.descricao-franquias {
+  font-size: 18px;
+  color: #4d4d4f;
+  font-family: "Lato", sans-serif;
+  line-height: 1.8;
+  text-align: center;
+  line-break: auto;
+}

@@ -1,23 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Tenor+Sans&display=swap");
-
-.posicao-contato {
-  display: flex;
-  justify-content: center;
-  margin: 7% 20% 4% 20%;
-  padding-bottom: 2%;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-color: #000;
-}
-
-.titulo-contato {
+app-titulos-menus {
   color: #fdcb00;
-  font-family: "Tenor Sans", sans-serif;
-  font-size: 35px;
-  line-height: 1.2em;
-  letter-spacing: -1px;
-  font-weight: bold;
 }
 
 .titulo-posicao-card {
