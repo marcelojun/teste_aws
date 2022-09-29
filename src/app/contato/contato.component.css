@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Tenor+Sans&display=swap");
 
 .posicao-contato {
   display: flex;
   justify-content: center;
-  margin: 7% 20% 2% 20%;
+  margin: 7% 20% 4% 20%;
   padding-bottom: 2%;
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -26,7 +26,17 @@
   text-align: center;
 }
 
+mat-card {
+  height: 33.5em;
+  border: 0.5px solid #54595f;
+}
+
+.com-cor {
+  background-color: #fdcb00;
+}
+
 h2 {
+  margin-bottom: 25px;
   font-family: "Tenor Sans", sans-serif;
   font-weight: bold;
   line-height: 1.2em;
@@ -44,12 +54,39 @@ mat-card-content {
 a {
   display: flex;
   align-items: center;
+  padding-left: 20px;
+  width: 90%;
+  line-height: inherit;
 }
 
 i {
-  padding: 0 10px 0 5px;
+  padding: 0 15px 0 5px;
 }
 
-.com-cor {
-  background-color: #fdcb00;
+.btn-agendar {
+  position: absolute;
+  left: 10%;
+  top: 75%;
+  height: 62px;
+  width: 348px;
+  padding: 10px 60px 10px 60px;
+  background-color: #000;
+  color: #fdcb00;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: inherit;
+  transition: 0.5s;
+}
+
+.btn-agendar > a {
+  text-decoration: none;
+  color: #fdcb00;
+}
+
+.btn-agendar:hover {
+  scale: 110%;
+  transition: 0.5s;
 }
