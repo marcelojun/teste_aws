@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router, RouterLinkWithHref } from '@angular/router';
 
 @Component({
   selector: 'app-form-franquias',
@@ -9,7 +10,10 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class FormFranquiasComponent implements OnInit {
   formulario!: FormGroup;
 
-  constructor() {}
+  celMask = {
+    mask: '(00)00000-0000',
+  };
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.formulario = new FormGroup({
@@ -17,7 +21,7 @@ export class FormFranquiasComponent implements OnInit {
       email: new FormControl(null, [Validators.required, Validators.email]),
       whatsapp: new FormControl(null, [
         Validators.required,
-        Validators.pattern('[- +()0-9]+)]'),
+        Validators.minLength(14),
       ]),
     });
   }

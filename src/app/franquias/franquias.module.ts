@@ -2,6 +2,7 @@ import { TitulosMenusModule } from './../components/titulos-menus/titulos-menus.
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+import { IMaskModule } from 'angular-imask';
 
 import { FranquiasRoutingModule } from './franquias-routing.module';
 import { FranquiasComponent } from './franquias.component';
@@ -17,6 +18,7 @@ import { FormFranquiasComponent } from './form-franquias/form-franquias.componen
   imports: [
     CommonModule,
     ReactiveFormsModule,
+    IMaskModule,
     FranquiasRoutingModule,
     TitulosMenusModule,
   ],

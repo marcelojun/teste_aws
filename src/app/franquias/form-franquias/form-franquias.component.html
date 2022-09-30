@@ -1,19 +1,57 @@
 <div class="formulario-baixar-apresentacao">
   <form [formGroup]="formulario">
-    <fieldset class="campo-formulario">
-      <input
-        class="form-control"
-        placeholder="Nome"
-        formControlName="nome"
-        required
-      />
-      <small
-        *ngIf="
-          formulario.get('nome')?.invalid && formulario.get('nome')?.touched
-        "
-        class="text-danger"
-        >É necessário informar seu nome!</small
-      >
-    </fieldset>
+    <input
+      type="text"
+      class="form-control form-control-nome"
+      placeholder="Nome"
+      formControlName="nome"
+      required
+    />
+    <p
+      *ngIf="formulario.get('nome')?.invalid && formulario.get('nome')?.touched"
+      class="text-danger-nome"
+    >
+      Informe seu nome
+    </p>
+    <input
+      type="text"
+      class="form-control form-control-whatsapp"
+      placeholder="Whatsapp"
+      formControlName="whatsapp"
+      [imask]="celMask"
+      required
+    />
+    <small
+      *ngIf="
+        formulario.get('whatsapp')?.invalid &&
+        formulario.get('whatsapp')?.touched
+      "
+      class="text-danger-whatsapp"
+      >Informe seu whatsapp com DDD</small
+    >
+    <input
+      type="text"
+      class="form-control form-control-email"
+      placeholder="E-mail"
+      formControlName="email"
+      required
+    />
+    <small
+      *ngIf="
+        formulario.get('email')?.invalid && formulario.get('email')?.touched
+      "
+      class="text-danger-email"
+      >Informe seu e-mail</small
+    >
   </form>
+  <div class="btn-position">
+    <button
+      [disabled]="formulario.invalid"
+      type="submit"
+      class="btn-baixar-apresentacao"
+      (click)="baixarApresentacao()"
+    >
+      BAIXE AQUI NOSSA APRESENTAÇÃO
+    </button>
+  </div>
 </div>

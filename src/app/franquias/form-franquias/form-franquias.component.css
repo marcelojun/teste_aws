@@ -1,1 +1,79 @@
+.formulario-baixar-apresentacao {
+  position: relative;
+  float: left;
+  top: 50px;
+  left: 70px;
+  width: 715px;
+}
 
+.text-danger-nome {
+  position: absolute;
+  left: 100px;
+  top: 10px;
+  font-size: 0.7rem;
+  color: #ff0000;
+}
+
+.text-danger-whatsapp {
+  position: absolute;
+  left: 450px;
+  top: 10px;
+  font-size: 0.7rem;
+  color: #ff0000;
+}
+
+.text-danger-email {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  font-size: 0.7rem;
+  color: #ff0000;
+}
+
+.form-control.ng-touched.ng-invalid {
+  border: 0.1rem solid #ff0000;
+}
+
+.form-control.ng-touched.ng-valid {
+  border: 0.1rem solid #008000;
+}
+
+.form-control-nome,
+.form-control-email,
+.form-control-whatsapp {
+  background-color: #fdcb00;
+  border: thin solid #818a91;
+  border-radius: 3px;
+}
+
+.form-control-nome,
+.form-control-whatsapp {
+  width: 350px;
+  height: 38px;
+}
+
+.form-control-email {
+  display: flex;
+  width: 708px;
+  height: 38px;
+}
+
+.btn-position {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-baixar-apresentacao {
+  width: 293px;
+  height: 41px;
+  color: #fff;
+  border: thin #13aff0;
+  border-radius: 3px;
+  background-color: #13aff0;
+  transition: 0.2s;
+}
+
+.btn-baixar-apresentacao:hover {
+  border: thin #0b7cac;
+  background-color: #0b7cac;
+}
